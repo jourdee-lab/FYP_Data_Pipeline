@@ -1,0 +1,83 @@
+# configs/sources.yml
+# Purpose: define where raw Census SAS CSV splits live (not committed), and where outputs go.
+# NOTE: Replace BASE_RAW_URL_* with your own stable download location (UKDS local path, OSF, S3, etc).
+
+project:
+  name: manchester-spatial-analysis
+  notes: "1981 Census SAS tables -> aggregate to Manchester (zoneid prefix 03BN) -> profile + indicators"
+
+data:
+  raw:
+    census1981:
+      # Base folder for raw split CSVs (5 parts per SAS table)
+      # Expected filenames pattern: 81sasXXews0.csv ... 81sasXXews4.csv
+      base_url: "BASE_RAW_URL_CENSUS1981"
+
+      tables:
+        sas02:
+          code: "SAS02"
+          label: "All residents (demographic base)"
+          parts:
+            - "81sas02ews0.csv"
+            - "81sas02ews1.csv"
+            - "81sas02ews2.csv"
+            - "81sas02ews3.csv"
+            - "81sas02ews4.csv"
+          raw_subdir: "sas02_allresidents"
+
+        sas04:
+          code: "SAS04"
+          label: "Country of birth"
+          parts:
+            - "81sas04ews0.csv"
+            - "81sas04ews1.csv"
+            - "81sas04ews2.csv"
+            - "81sas04ews3.csv"
+            - "81sas04ews4.csv"
+          raw_subdir: "sas04_countryofbirth"
+
+        sas07:
+          code: "SAS07"
+          label: "Employment"
+          parts:
+            - "81sas07ews0.csv"
+            - "81sas07ews1.csv"
+            - "81sas07ews2.csv"
+            - "81sas07ews3.csv"
+            - "81sas07ews4.csv"
+          raw_subdir: "sas07_employment"
+
+        sas10:
+          code: "SAS10"
+          label: "Housing tenure / amenities (households with residents)"
+          parts:
+            - "81sas10ews0.csv"
+            - "81sas10ews1.csv"
+            - "81sas10ews2.csv"
+            - "81sas10ews3.csv"
+            - "81sas10ews4.csv"
+          raw_subdir: "sas10_housingtenure"
+
+  lookups:
+    # These can be committed (smaller, stable)
+    geography_lookup_csv: "data/processed/lookups/1981geographylookup.csv"
+    variable_lookup_csv: "data/processed/lookups/1981variablelookup.csv"
+    table_lookup_csv: "data/processed/lookups/1981tablecodenamelookup.csv"
+
+  outputs:
+    # Where your scripts write final 1-row aggregates + merged profile
+    aggregates_dir: "data/processed/outputs/aggregates"
+    manchester_1981_dir: "data/processed/outputs/aggregates/manchester1981"
+    files:
+      manchestersas041981: "manchestersas041981.csv"
+      manchestersas071981: "manchestersas071981.csv"
+      manchestersas101981: "manchestersas101981.csv"
+      manchestersas021981: "manchestersas021981.csv"
+      manchesterprofile1981: "manchesterprofile1981.csv"
+      manchestersas101981indicators: "manchestersas101981indicators.csv"
+
+provenance:
+  source_catalog:
+    name: "UK Data Service"
+    dataset_title: "Census 1981 data (aggregate)"
+    doi: "http://dx.doi.org/10.5257/census/aggregate-1981-1"
