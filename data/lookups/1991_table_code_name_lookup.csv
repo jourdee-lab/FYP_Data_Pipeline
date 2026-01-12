@@ -1,0 +1,265 @@
+"table_code","table_label","table_title","table_universe","table_counts"
+SAS01,Small Area Statistics Table 01,Population bases,Persons present plus absent residents in households,Persons
+LBS01,Local Base Statistics Table 01,Population bases,Persons present plus absent residents in households,Persons
+SAS02,Small Area Statistics Table 02,Age and marital status,Residents,Persons
+LBS02,Local Base Statistics Table 02,Age and marital status,Residents,Persons
+SAS03,Small Area Statistics Table 03,Communal establishments,Establishments; persons present not in households,Persons & Establishments
+LBS03,Local Base Statistics Table 03,Communal establishments,Establishments; persons present not in households,Persons & Establishments
+SAS04,Small Area Statistics Table 04,Medical and care establishments,Residents (non-staff) present in households,Persons
+LBS04,Local Base Statistics Table 04,Medical and care establishments,Residents (non-staff) present in households,Persons
+SAS05,Small Area Statistics Table 05,Hotels and other establishments,Residents (non-staff) present not in households,Persons
+LBS05,Local Base Statistics Table 05,Hotels and other establishments,Residents (non-staff) present not in households,Persons
+SAS06,Small Area Statistics Table 06,Ethnic group,Residents,Persons
+LBS06,Local Base Statistics Table 06,Ethnic group,Residents,Persons
+SAS07,Small Area Statistics Table 07,Country of birth,Residents,Persons
+LBS07,Local Base Statistics Table 07,Country of birth,Residents,Persons
+SAS08,Small Area Statistics Table 08,Economic position,Residents aged 16 and over,Persons
+LBS08,Local Base Statistics Table 08,Economic position,Residents aged 16 and over,Persons
+SAS09,Small Area Statistics Table 09,Economic position and ethnic group,Residents aged 16 and over,Persons
+LBS09,Local Base Statistics Table 09,Economic position and ethnic group,Residents aged 16 and over,Persons
+SAS10,Small Area Statistics Table 10,Term-time address,Students (16 and over) present plus absent resident students (16 and over),Persons
+LBS10,Local Base Statistics Table 10,Term-time address,Students (16 and over) present plus absent resident students (16 and over),Persons
+SAS11,Small Area Statistics Table 11,Persons present,Persons present,Persons
+LBS11,Local Base Statistics Table 11,Persons present,Persons present,Persons
+SAS12,Small Area Statistics Table 12,Long-term illness in households,Residents in households with limiting long-term illness,Persons
+LBS12,Local Base Statistics Table 12,Long-term illness in households,Residents in households with limiting long-term illness,Persons
+SAS13,Small Area Statistics Table 13,Long-term illness in communal establishments,Residents not in households with limiting long-term illness,Persons
+LBS13,Local Base Statistics Table 13,Long-term illness in communal establishments,Residents not in households with limiting long-term illness,Persons
+SAS14,Small Area Statistics Table 14,Long-term illness and economic position,Residents aged 16 and over with limiting long-term illness,Persons
+LBS14,Local Base Statistics Table 14,Long-term illness and economic position,Residents aged 16 and over with limiting long-term illness,Persons
+SAS15,Small Area Statistics Table 15,Migrants,Residents with different address one year before census,Persons
+LBS15,Local Base Statistics Table 15,Migrants,Residents with different address one year before census,Persons
+SAS16,Small Area Statistics Table 16,Wholly moving households,Wholly moving households; residents in such households,Households & Persons
+LBS16,Local Base Statistics Table 16,Wholly moving households,Wholly moving households; residents in such households,Households & Persons
+SAS17,Small Area Statistics Table 17,Ethnic group of migrants,Residents aged 1 and over,Persons
+LBS17,Local Base Statistics Table 17,Ethnic group of migrants,Residents aged 1 and over,Persons
+SAS18,Small Area Statistics Table 18,Imputed residents,Imputed residents of wholly absent households,Persons
+LBS18,Local Base Statistics Table 18,Imputed residents,Imputed residents of wholly absent households,Persons
+SAS19,Small Area Statistics Table 19,Imputed households,Wholly absent households with imputed residents; imputed residents in such households,Households
+LBS19,Local Base Statistics Table 19,Imputed households,Wholly absent households with imputed residents; imputed residents in such households,Households & Persons
+SAS20,Small Area Statistics Table 20,Tenure and amenities,Households with residents; residents in households,Households & Persons
+LBS20,Local Base Statistics Table 20,Tenure and amenities,Households with residents; residents in households,Households & Persons
+SAS21,Small Area Statistics Table 21,Car availability,Households with residents; residents in households; cars in households,Households; Persons & Cars
+LBS21,Local Base Statistics Table 21,Car availability,Households with residents; residents in households; cars in households,Households; Persons & Cars
+SAS22,Small Area Statistics Table 22,Rooms and household size,Households with residents; residents with households; rooms in household spaces,Households Persons & Rooms
+LBS22,Local Base Statistics Table 22,Rooms and household size,Households with residents; residents with households; rooms in household spaces,Households Persons & Rooms
+SAS23,Small Area Statistics Table 23,Persons per room,Households with residents; residents in households,Households & Persons
+LBS23,Local Base Statistics Table 23,Persons per room,Households with residents; residents in households,Households & Persons
+SAS24,Small Area Statistics Table 24,Residents 18 and over,Households with residents: residents in households,Households & Persons
+LBS24,Local Base Statistics Table 24,Residents 18 and over,Households with residents: residents in households,Households & Persons
+SAS25,Small Area Statistics Table 25,Visitor households,Households with persons present but no residents; persons present in such households; cars and rooms in such households,Households; Persons; Rooms & Cars
+LBS25,Local Base Statistics Table 25,Visitor households,Households with persons present but no residents; persons present in such households; cars and rooms in such households,Households; Persons; Rooms & Cars
+SAS26,Small Area Statistics Table 26,Students in households,Households with residents; residents in households; persons present in households; rooms in household spaces; cars in households,Households; Persons; Rooms & Cars
+LBS26,Local Base Statistics Table 26,Students in households,Households with residents; residents in households; persons present in households; rooms in household spaces; cars in households,Households; Persons; Rooms & Cars
+SAS27,Small Area Statistics Table 27,Households: 1971/'81/'91 bases,Line 1: 1971 population base; Line 2: 1981 population base; Line 3: 1991 population base,Households; Persons & Rooms
+LBS27,Local Base Statistics Table 27,Households: 1971/'81/'91 bases,Line 1: 1971 population base; Line 2: 1981 population base; Line 3: 1991 population base,Households; Persons & Rooms
+SAS28,Small Area Statistics Table 28,Dependants in households,Households with residents; residents in households,Households & Persons
+LBS28,Local Base Statistics Table 28,Dependants in households,Households with residents; residents in households,Households & Persons
+SAS29,Small Area Statistics Table 29,Dependants and long-term illness,Households with residents; residents in households,Households & Persons
+LBS29,Local Base Statistics Table 29,Dependants and long-term illness,Households with residents; residents in households,Households & Persons
+SAS30,Small Area Statistics Table 30,Carers,Households with residents: residents in households with dependents,Households & Persons
+LBS30,Local Base Statistics Table 30,Carers,Households with residents: residents in households with dependents,Households & Persons
+SAS31,Small Area Statistics Table 31,Dependent children in households,Households with residents : residents in households,Households & Persons
+LBS31,Local Base Statistics Table 31,Dependent children in households,Households with residents : residents in households,Households & Persons
+SAS32,Small Area Statistics Table 32,Households with children aged 0 - 15,Households with residents : residents in households,Households & Persons
+LBS32,Local Base Statistics Table 32,Households with children aged 0 - 15,Households with residents : residents in households,Households & Persons
+SAS33,Small Area Statistics Table 33,Women in couples: economic position,Females resident in households of one male aged 16 and over and one female aged 16 and over with or without persons aged 0 - 15; number of persons aged 0 - 15 in such households,Households & Persons
+LBS33,Local Base Statistics Table 33,Women in couples: economic position,Females resident in households of one male aged 16 and over and one female aged 16 and over with or without persons aged 0 - 15; number of persons aged 0 - 15 in such households,Households & Persons
+SAS34,Small Area Statistics Table 34,Economic position of household residents,Residents aged 16 and over in households,Persons
+LBS34,Local Base Statistics Table 34,Economic position of household residents,Residents aged 16 and over in households,Persons
+SAS35,Small Area Statistics Table 35,Age & marital status of household residents,Residents in households,Persons
+LBS35,Local Base Statistics Table 35,Age & marital status of household residents,Residents in households,Persons
+SAS36,Small Area Statistics Table 36,Earners and dependent children,Households with residents; resident adults; resident dependent children,Households & Persons
+LBS36,Local Base Statistics Table 36,Earners and dependent children,Households with residents; resident adults; resident dependent children,Households & Persons
+SAS37,Small Area Statistics Table 37,Young adults,Residents aged 16 - 24 in households,Persons
+LBS37,Local Base Statistics Table 37,Young adults,Residents aged 16 - 24 in households,Persons
+SAS38,Small Area Statistics Table 38,Single years of age,Residents in households,Persons
+LBS38,Local Base Statistics Table 38,Single years of age,Residents in households,Persons
+SAS39,Small Area Statistics Table 39,Headship,Residents in households,Persons
+LBS39,Local Base Statistics Table 39,Headship,Residents in households,Persons
+SAS40,Small Area Statistics Table 40,Lone 'parents',Lone 'parents' aged 16 and over in households of one person aged 16 and over with person(s) aged 0 - 15; persons aged 0 - 15 in such households,Persons
+LBS40,Local Base Statistics Table 40,Lone 'parents',Lone 'parents' aged 16 and over in households of one person aged 16 and over with person(s) aged 0 - 15; persons aged 0 - 15 in such households,Persons
+SAS41,Small Area Statistics Table 41,Shared accommodation,Households with residents not in self-contained accommodation; rooms in such households,Households & Rooms
+LBS41,Local Base Statistics Table 41,Shared accommodation,Households with residents not in self-contained accommodation; rooms in such households,Households & Rooms
+SAS42,Small Area Statistics Table 42,Household composition and housing,Households with residents; dependent children in households,Households & Persons
+LBS42,Local Base Statistics Table 42,Household composition and housing,Households with residents; dependent children in households,Households & Persons
+SAS43,Small Area Statistics Table 43,Household composition and ethnic group,Households with residents; residents in households,Households & Persons
+LBS43,Local Base Statistics Table 43,Household composition and ethnic group,Households with residents; residents in households,Households & Persons
+SAS44,Small Area Statistics Table 44,Household composition and long-term illness,Households containing persons with limiting long-term illness; residents in such households,Households & Persons
+LBS44,Local Base Statistics Table 44,Household composition and long-term illness,Households containing persons with limiting long-term illness; residents in such households,Households & Persons
+SAS45,Small Area Statistics Table 45,Migrant household heads,Households with residents,Households
+LBS45,Local Base Statistics Table 45,Migrant household heads,Households with residents,Households
+SAS46,Small Area Statistics Table 46,Households with dependent children; housing,Households with dependent children; residents in such households,Households & Persons
+LBS46,Local Base Statistics Table 46,Households with dependent children; housing,Households with dependent children; residents in such households,Households & Persons
+SAS47,Small Area Statistics Table 47,Households with pensioners; housing,Households with one or more residents of pensionable age; residents in such households,Households & Persons
+LBS47,Local Base Statistics Table 47,Households with pensioners; housing,Households with one or more residents of pensionable age; residents in such households,Households & Persons
+SAS48,Small Area Statistics Table 48,Households with dependants; housing,Households with residents,Households
+LBS48,Local Base Statistics Table 48,Households with dependants; housing,Households with residents,Households
+SAS49,Small Area Statistics Table 49,Ethnic group; housing,Households with residents; residents in households,Households
+LBS49,Local Base Statistics Table 49,Ethnic group; housing,Households with residents; residents in households,Households
+SAS50,Small Area Statistics Table 50,Country of birth; hold heads and residents,Residents in households; household heads,Persons
+LBS50,Local Base Statistics Table 50,Country of birth; hold heads and residents,Residents in households; household heads,Persons
+SAS51,Small Area Statistics Table 51,Country of birth and ethnic group,Residents in households; household heads,Persons
+LBS51,Local Base Statistics Table 51,Country of birth and ethnic group,Residents in households; household heads,Persons
+LBS52,Local Base Statistics Table 52,Language indicators,Residents,Persons
+SAS53,Small Area Statistics Table 53,Lifestages,Residents aged 16 and over in households,Persons
+LBS53,Local Base Statistics Table 53,Lifestages,Residents aged 16 and over in households,Persons
+SAS54,Small Area Statistics Table 54,Occupancy (Occupied; vacant; other accommodation),Household spaces; rooms in household spaces; rooms in hotels and boarding houses,Household spaces & Rooms
+LBS54,Local Base Statistics Table 54,Occupancy (Occupied; vacant; other accommodation),Household spaces; rooms in household spaces; rooms in hotels and boarding houses,Household spaces & Rooms
+SAS55,Small Area Statistics Table 55,Household spaces and occupancy,Household spaces in permanent buildings; dwellings,Household spaces
+LBS55,Local Base Statistics Table 55,Household spaces and occupancy,Household spaces in permanent buildings; dwellings,Household spaces
+SAS56,Small Area Statistics Table 56,Household space type and occupancy,Household spaces,Household spaces
+LBS56,Local Base Statistics Table 56,Household space type and occupancy,Household spaces,Household spaces
+SAS57,Small Area Statistics Table 57,Household space type; rooms and household size,Household with residents; residents in households; rooms in household spaces,Households; Persons & Rooms
+LBS57,Local Base Statistics Table 57,Household space type; rooms and household size,Household with residents; residents in households; rooms in household spaces,Households; Persons & Rooms
+SAS58,Small Area Statistics Table 58,Household space type; tenure and amenities,Households with residents,Households
+LBS58,Local Base Statistics Table 58,Household space type; tenure and amenities,Households with residents,Households
+SAS59,Small Area Statistics Table 59,Household space type; hold composition,Households with residents; residents in households,Households
+LBS59,Local Base Statistics Table 59,Household space type; hold composition,Households with residents; residents in households,Households
+SAS60,Small Area Statistics Table 60,Dwellings and household spaces,Converted or shared accommodation; dwellings; household spaces; rooms in such accommodation,Converted or shared accommodation; Dwellings; Household spaces; Rooms
+LBS60,Local Base Statistics Table 60,Dwellings and household spaces,Converted or shared accommodation; dwellings; household spaces; rooms in such accommodation,Converted or shared accommodation; Dwellings; Household spaces; Rooms
+SAS61,Small Area Statistics Table 61,Dwelling type and occupancy,Dwellings; non-permanent accommodation,Dwellings
+LBS61,Local Base Statistics Table 61,Dwelling type and occupancy,Dwellings; non-permanent accommodation,Dwellings
+SAS62,Small Area Statistics Table 62,Occupancy and tenure of dwellings,Dwellings with persons present or resident,Dwellings
+LBS62,Local Base Statistics Table 62,Occupancy and tenure of dwellings,Dwellings with persons present or resident,Dwellings
+SAS63,Small Area Statistics Table 63,Dwelling type and tenure,Dwelling with residents; non-permanent accommodation,Dwellings
+LBS63,Local Base Statistics Table 63,Dwelling type and tenure,Dwelling with residents; non-permanent accommodation,Dwellings
+LBS64,Local Base Statistics Table 64,Tenure of dwellings and household spaces,Dwellings; household spaces in dwellings,Dwellings & Household spaces
+LBS65,Local Base Statistics Table 65,Occupancy of dwellings and household spaces,Dwellings; household spaces in dwellings,Dwellings & Household spaces
+SAS66,Small Area Statistics Table 66,Shared dwellings,Shared dwellings; household spaces in shared dwellings,Household spaces & Dwellings
+LBS66,Local Base Statistics Table 66,Shared dwellings,Shared dwellings; household spaces in shared dwellings,Household spaces & Dwellings
+SAS67,Small Area Statistics Table 67,Welsh Language (Wales only)/Gaelic Language (Scotland only),Residents,Persons
+LBS67,Local Base Statistics Table 67,Welsh Language (Wales only)/Gaelic Language (Scotland only),Residents,Persons
+SAS68,Small Area Statistics Table 68,Floor level of accommodation,Households in permanent buildings: residents in such households,Households & Persons
+LBS68,Local Base Statistics Table 68,Floor level of accommodation,Households in permanent buildings: residents in such households,Households & Persons
+SAS69,Small Area Statistics Table 69,Occupancy norm : households,Households in permanent buildings with residents,Households
+LBS69,Local Base Statistics Table 69,Occupancy norm : households,Households in permanent buildings with residents,Households
+SAS70,Small Area Statistics Table 70,Occupancy norm : residents,Residents in households in permanent buildings,Persons
+LBS70,Local Base Statistics Table 70,Occupancy norm : residents,Residents in households in permanent buildings,Persons
+SAS71,Small Area Statistics Table 71,Comparison of 100% and 10% counts,Residents; households with residents,Households & Persons
+LBS71,Local Base Statistics Table 71,Comparison of 100% and 10% counts,Residents; households with residents,Households & Persons
+LBS72,Local Base Statistics Table 72,Economic and employment status (10% Sample),Residents aged 16 and over,Persons
+SAS73,Small Area Statistics Table 73,Industry (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS73,Local Base Statistics Table 73,Industry (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS74,Small Area Statistics Table 74,Occupation (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS74,Local Base Statistics Table 74,Occupation (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS75,Small Area Statistics Table 75,Hours worked (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS75,Local Base Statistics Table 75,Hours worked (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS76,Small Area Statistics Table 76,Occupation and Industry (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS76,Local Base Statistics Table 76,Occupation and Industry (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS77,Small Area Statistics Table 77,Industry and hours worked (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS77,Local Base Statistics Table 77,Industry and hours worked (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS78,Small Area Statistics Table 78,Occupation and hours worked (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS78,Local Base Statistics Table 78,Occupation and hours worked (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS79,Small Area Statistics Table 79,Industry and employment status (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS79,Local Base Statistics Table 79,Industry and employment status (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS80,Small Area Statistics Table 80,Working parents; hours worked (10% Sample),Women in couple families and lone parents in employment,Persons
+LBS80,Local Base Statistics Table 80,Working parents; hours worked (10% Sample),Women in couple families and lone parents in employment,Persons
+SAS81,Small Area Statistics Table 81,Occupation and employment status (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS81,Local Base Statistics Table 81,Occupation and employment status (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS82,Small Area Statistics Table 82,Travel to work and SEG (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+LBS82,Local Base Statistics Table 82,Travel to work and SEG (10% Sample),Residents aged 16 and over; employees and self-employed,Persons
+SAS83,Small Area Statistics Table 83,Travel to work and car availability (10% Sample),Households with residents aged 16 and over; self-employed aged 16 and over and means of transport to work,Households
+LBS83,Local Base Statistics Table 83,Travel to work and car availability (10% Sample),Households with residents aged 16 and over; self-employed aged 16 and over and means of transport to work,Households
+SAS84,Small Area Statistics Table 84,Qualified manpower (10% Sample),Residents aged 18 and over,Persons
+LBS84,Local Base Statistics Table 84,Qualified manpower (10% Sample),Residents aged 18 and over,Persons
+LBS85,Local Base Statistics Table 85,Ethnic group of qualified manpower (10% Sample),Residents aged 18 and over,Persons
+SAS86,Small Area Statistics Table 86,SEG of households and families (10% Sample),Households with residents; residents in households; families of resident persons,Households & Persons
+LBS86,Local Base Statistics Table 86,SEG of households and families (10% Sample),Households with residents; residents in households; families of resident persons,Households & Persons
+SAS87,Small Area Statistics Table 87,Family type and tenure (10% Sample),Households with residents; residents in households,Households & Persons
+LBS87,Local Base Statistics Table 87,Family type and tenure (10% Sample),Households with residents; residents in households,Households & Persons
+LBS88,Local Base Statistics Table 88,Concealed families (10% Sample),Families of resident persons,Persons
+SAS89,Small Area Statistics Table 89,Family composition (10% Sample),Families of resident persons,Persons
+LBS89,Local Base Statistics Table 89,Family composition (10% Sample),Families of resident persons,Persons
+SAS90,Small Area Statistics Table 90,Social class of households (10% Sample),Households with residents; residents in households,Households & Persons
+LBS90,Local Base Statistics Table 90,Social class of households (10% Sample),Households with residents; residents in households,Households & Persons
+SAS91,Small Area Statistics Table 91,Social class and economic position (10% Sample),Residents aged 16 and over in households,Persons
+LBS91,Local Base Statistics Table 91,Social class and economic position (10% Sample),Residents aged 16 and over in households,Persons
+SAS92,Small Area Statistics Table 92,SEG and economic position (10% Sample),Economically active residents,Persons
+LBS92,Local Base Statistics Table 92,SEG and economic position (10% Sample),Economically active residents,Persons
+LBS93,Local Base Statistics Table 93,SEG; social class and ethnic group (10% Sample),Residents aged 16 and over; employees and self-employed; Socio-economic group; Social class based on occupation,Persons
+SAS94,Small Area Statistics Table 94,Former industry of unemployed (10% Sample),Residents on a Government scheme or unemployed,Persons
+LBS94,Local Base Statistics Table 94,Former industry of unemployed (10% Sample),Residents on a Government scheme or unemployed,Persons
+SAS95,Small Area Statistics Table 95,Former occupation of unemployed (10% Sample),Residents on a Government scheme or unemployed,Persons
+LBS95,Local Base Statistics Table 95,Former occupation of unemployed (10% Sample),Residents on a Government scheme or unemployed,Persons
+LBS96,Local Base Statistics Table 96,Armed forces (10% Sample),Residents in employment in armed forces,Persons
+LBS97,Local Base Statistics Table 97,Armed forces; households (10% Sample),Residents in households with head in employment in armed forces,Persons
+SAS98,Small Area Statistics Table 98,Occupation orders; 1980 classification (10% Sample),Residents aged 16 and over,Persons
+LBS98,Local Base Statistics Table 98,Occupation orders; 1980 classification (10% Sample),Residents aged 16 and over, employees and self-employed
+SAS99,Small Area Statistics Table 99,Occupations; Standard Occupational Classification (10% Sample),Residents aged 16 and over,Persons
+LBS99,Local Base Statistics Table 99,Occupations; Standard Occupational Classification (10% Sample),Residents aged 16 and over, employees and self-employed
+SN01,Northern Ireland Small Area Statistics Table 01,Population bases,Persons present plus absent residents in households,Persons
+SN02,Northern Ireland Small Area Statistics Table 02,Age and marital status,Residents,Persons
+SN03,Northern Ireland Small Area Statistics Table 03,Communal establishments,Establishments: Persons present not in households,Persons & Establishments
+SN04,Northern Ireland Small Area Statistics Table 04,Medical and care establishments,Residents (non-staff) present not in households,Persons
+SN05,Northern Ireland Small Area Statistics Table 05,Hotels and other establishments,Residents (non-staff) present not in households,Persons
+SN06,Northern Ireland Small Area Statistics Table 06,Religion,Residents,Persons
+SN07,Northern Ireland Small Area Statistics Table 07,Country of birth,Residents,Persons
+SN08,Northern Ireland Small Area Statistics Table 08,Economic position,Residents aged 16 or over,Persons
+SN09,Northern Ireland Small Area Statistics Table 09,Economic position and religion,Residents aged 16 or over,Persons
+SN10,Northern Ireland Small Area Statistics Table 10,Term-time address,Students (16 and over) present plus absent residents students (16 and over),Persons
+SN11,Northern Ireland Small Area Statistics Table 11,Persons present,Persons present,Persons
+SN12,Northern Ireland Small Area Statistics Table 12,Long-term illness in households,Residents in households with limiting long-term illness,Persons
+SN13,Northern Ireland Small Area Statistics Table 13,Long-term illness in communal establishments,Residents not in households with limiting long-term illness,Persons
+SN14,Northern Ireland Small Area Statistics Table 14,Long-term illness and economic position,Residents aged 16 and over with limiting long-term illness,Persons
+SN15,Northern Ireland Small Area Statistics Table 15,Migrants,Residents with different address one year before Census,Persons
+SN16,Northern Ireland Small Area Statistics Table 16,Wholly moving households,Wholly moving households; residents in such households,Households & Persons
+SN17,Northern Ireland Small Area Statistics Table 17,Religion of migrants,Residents aged 1 and over,Persons
+SN20,Northern Ireland Small Area Statistics Table 20,Tenure and amenities,Households with residents; residents in households,Households & Persons
+SN21,Northern Ireland Small Area Statistics Table 21,Car availability,Households with residents; residents in households; cars in households,Households; Persons & Cars
+SN22,Northern Ireland Small Area Statistics Table 22,Rooms and household size,Households with residents; residents in households; rooms in households,Households; Persons & Rooms
+SN23,Northern Ireland Small Area Statistics Table 23,Persons per room,Households with residents; residents in households,Households & Persons
+SN24,Northern Ireland Small Area Statistics Table 24,Residents 18 and over,Households with residents; residents in households,Households & Persons
+SN25,Northern Ireland Small Area Statistics Table 25,Visitor households,Households with persons present but no residents; <br>persons present in such households; <br>cars and rooms in such households,Households; Persons; Rooms & Cars
+SN26,Northern Ireland Small Area Statistics Table 26,Students in households,Households with residents; residents in households; <br>persons present in households <br>rooms in household spaces; cars in households,Households; Persons; Rooms & Cars
+SN27,Northern Ireland Small Area Statistics Table 27,Households: 1971/81/91 bases,Line 1: 1991 households with persons present (1971 population base): present residents and visitors: rooms<br> Line 2: 1991 households (1981 population base): present and absent residents; rooms<br> Line 3: 1991 households enumerated or absent (1991 popul,Households; Persons & Rooms
+SN28,Northern Ireland Small Area Statistics Table 28,Dependants in households,Households with residents; residents in households,Households & Persons
+SN29,Northern Ireland Small Area Statistics Table 29,Dependants and long-term illness,Households with residents; dependants in households,Households & Persons
+SN30,Northern Ireland Small Area Statistics Table 30,Carers,Households with residents; residents in households with dependants,Households & Persons
+SN31,Northern Ireland Small Area Statistics Table 31,Dependant children in households,Households with residents; residents in households,Households & Persons
+SN32,Northern Ireland Small Area Statistics Table 32,Children 0 - 15 in households,Households with residents; residents in households,Households & Persons
+SN33,Northern Ireland Small Area Statistics Table 33,Women in 'couples': economic position,Females resident in households of one male aged 16 and over and one female aged 16 and over <br> with or without persons aged 0 - 15; number of persons aged 0 - 15 in such households,Households & Persons
+SN34,Northern Ireland Small Area Statistics Table 34,Economic position of household residents,Residents aged 16 and over in households,Persons
+SN35,Northern Ireland Small Area Statistics Table 35,Age and marital status of household residents,Residents in households,Persons
+SN36,Northern Ireland Small Area Statistics Table 36,Earners and dependant children,Households with residents; resident adults; resident dependant children,Households & Persons
+SN37,Northern Ireland Small Area Statistics Table 37,Young adults,Residents aged 16 - 24 in households,Persons
+SN38,Northern Ireland Small Area Statistics Table 38,Single years of age,Residents aged 0 - 15 in households,Persons
+SN39,Northern Ireland Small Area Statistics Table 39,Headship,Residents in households,Persons
+SN40,Northern Ireland Small Area Statistics Table 40,Lone 'parents',Lone 'parents' aged 16 and over in households of one person aged 16 and over with person(s) aged 0 - 15; <br> persons aged 0 - 15 in such households,Persons
+SN41,Northern Ireland Small Area Statistics Table 41,Shared accommodation,Households with residents not in self-contained accommodation; rooms in such households,Households & Rooms
+SN42,Northern Ireland Small Area Statistics Table 42,Household composition and housing,Households with residents; dependant children in households,Households & Persons
+SN43,Northern Ireland Small Area Statistics Table 43,Household composition and religion,Households with residents; residents in households,Households & Persons
+SN44,Northern Ireland Small Area Statistics Table 44,Household composition and long-term illness,Households containing persons with limiting long-term illness; residents in such households,Households & Persons
+SN46,Northern Ireland Small Area Statistics Table 46,Households with dependant children: housing,Households with dependant children; residents in such households,Households & Persons
+SN47,Northern Ireland Small Area Statistics Table 47,Households with pensioners: housing,Households with one or more residents of pensionable age; residents in such households,Households & Persons
+SN48,Northern Ireland Small Area Statistics Table 48,Households with dependants: housing,Households with residents,Households
+SN49,Northern Ireland Small Area Statistics Table 49,Religion: housing,Households with residents; residents in households,Households
+SN50,Northern Ireland Small Area Statistics Table 50,Country of birth: household heads and residents,Residents in households; household heads,Persons
+SN51,Northern Ireland Small Area Statistics Table 51,Country of birth and religion,Residents in households,Persons
+SN53,Northern Ireland Small Area Statistics Table 53,Lifestages,Residents aged 16 and over in households,Persons
+SN54,Northern Ireland Small Area Statistics Table 54,Occupancy (occupied and vacant),Households; rooms in households,Household spaces & Rooms
+SN56,Northern Ireland Small Area Statistics Table 56,Household dwelling type and occupancy,Households,Household dwelling types
+SN57,Northern Ireland Small Area Statistics Table 57,Household dwelling type: rooms; household size and density,Households with residents; residents in households; rooms in households,Households & Persons & Rooms
+SN58,Northern Ireland Small Area Statistics Table 58,Household dwelling type: tenure and amenities,Households with residents,Households
+SN59,Northern Ireland Small Area Statistics Table 59,Household dwelling type: household composition,Households with residents; residents in households,Households
+SN62,Northern Ireland Small Area Statistics Table 62,Occupancy and tenure of households,Households with persons present or resident,Households
+SN63,Northern Ireland Small Area Statistics Table 63,Dwelling type and tenure,Households with usual residents; non-permanent accommodation,Dwellings
+SN67,Northern Ireland Small Area Statistics Table 67,Irish language,Residents,Persons
+SN73,Northern Ireland Small Area Statistics Table 73,Industry,Residents aged 16 and over; employees and self-employed,Persons
+SN74,Northern Ireland Small Area Statistics Table 74,Occupation,Residents aged 16 and over; employees and self-employed,Persons
+SN75,Northern Ireland Small Area Statistics Table 75,Hours worked,Residents aged 16 and over; employees and self-employed,Persons
+SN76,Northern Ireland Small Area Statistics Table 76,Occupation and industry,Residents aged 16 and over; employees and self-employed,Persons
+SN77,Northern Ireland Small Area Statistics Table 77,Industry and hours worked,Residents aged 16 and over; employees and self-employed,Persons
+SN78,Northern Ireland Small Area Statistics Table 78,Occupation and hours worked,Residents aged 16 and over; employees and self-employed,Persons
+SN79,Northern Ireland Small Area Statistics Table 79,Industry and employment status,Residents aged 16 and over; employees and self-employed,Persons
+SN80,Northern Ireland Small Area Statistics Table 80,Working parents: hours worked,Women in couple households and lone parents in employment,Persons
+SN81,Northern Ireland Small Area Statistics Table 81,Occupation and employment status,Residents aged 16 and over; employees and self-employed,Persons
+SN82,Northern Ireland Small Area Statistics Table 82,Travel to work and SEG,Residents aged 16 and over; employees and self-employed,Persons
+SN83,Northern Ireland Small Area Statistics Table 83,Travel to work and car availability,Households with residents aged 16 and over; employees and self-employed,Households
+SN84,Northern Ireland Small Area Statistics Table 84,Qualified manpower,Residents aged 18 and over,Persons
+SN86,Northern Ireland Small Area Statistics Table 86,SEG of households,Households with residents; residents in households,Households & Persons
+SN90,Northern Ireland Small Area Statistics Table 90,Social class of households,Households with residents; residents in households,Households & Persons
+SN91,Northern Ireland Small Area Statistics Table 91,Social class and economic position,Residents aged 16 and over in households,Persons
+SN92,Northern Ireland Small Area Statistics Table 92,SEG and economic position,Economically active residents,Persons
+SN94,Northern Ireland Small Area Statistics Table 94,Former industry of unemployed,Residents on a government scheme or unemployed,Persons
+SN95,Northern Ireland Small Area Statistics Table 95,Former occupation of unemployed,Residents on a government scheme or unemployed,Persons
