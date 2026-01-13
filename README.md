@@ -1,14 +1,14 @@
-# FYP Data Pipeline (WORK IN PROGRESS)
+# FYP - Manchester Spatial Analysis  (WORK IN PROGRESS)
 
 A geospatial data engineering pipeline for analyzing the spatial evolution and economic integration of Chinese immigrant communities in Manchester (1981–2001).
 
 ## Overview
 
-This project processes UK Census Small Area Statistics (SAS) microdata from the 1981 and 1991 censuses to extract, aggregate, and analyze country-of-birth demographics, with a focus on Far East and Chinese immigrant populations across Manchester's wards and enumeration districts.
+This project processes UK Census Small Area Statistics (SAS) microdata from the 1981, 1991, 2001 censuses to extract, aggregate, and analyse country-of-birth demographics, with a focus on Far East and Chinese immigrant populations across Manchester's wards and enumeration districts.
 
 ## Project Scope
 
-- **Research Question**: How did Chinese immigrant communities spatially organize and economically integrate in Manchester over two decades?
+- **Research Question**: To what extent did Chinese immigrant communities spatially organize and economically integrate in Manchester over two decades?
 - **Geography**: Manchester (City of Manchester, 1981 zone code: `03BN`)
 - **Census Years**: 1981, 1991 (2001 planned)
 - **Key Variables**: Country of birth (SAS04), ancestry, occupation, housing tenure
