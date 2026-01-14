@@ -1,7 +1,5 @@
 # Phase 5 Join Validation — Summary Report
 
-**Generated:** 2026-01-14T15:02:35.562681
-
 ## Quick Summary
 
 | Metric | Value |

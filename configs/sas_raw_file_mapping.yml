@@ -1,0 +1,119 @@
+# Configuration for Raw SAS File Ingestion (1981)
+# ================================================
+# This file documents the expected structure of raw SAS CSV files
+# and how they will be ingested to ED-level format.
+
+raw_data_dir: "data/raw/sas"
+output_dir: "data/processed/raw_ed_level/1981"
+
+year: 1981
+manchester_prefix: "03BN"
+
+# SAS Table Definitions
+# Each table is split into 5 CSV parts (horizontal split - wide format)
+# Parts are concatenated left-to-right, all sharing the same 'zoneid' column
+
+tables:
+  sas02:
+    description: "Demographics - Total Population by Age/Sex"
+    parts: 5
+    expected_columns: 161
+    expected_rows_manchester: 1017
+    output_file: "sas02_1981_ed_level.csv"
+    combined_file: "data/processed/aggregates/census_1981/1981_sas02_totalpop_combined.csv"
+    expected_raw_files:
+      - "1981_sas02_part1.csv"
+      - "1981_sas02_part2.csv"
+      - "1981_sas02_part3.csv"
+      - "1981_sas02_part4.csv"
+      - "1981_sas02_part5.csv"
+    
+  sas04:
+    description: "Country of Birth (Birthplace)"
+    parts: 5
+    expected_columns: 61
+    expected_rows_manchester: 1017
+    output_file: "sas04_1981_ed_level.csv"
+    combined_file: "data/processed/aggregates/census_1981/1981_sas04_birth_combined.csv"
+    expected_raw_files:
+      - "1981_sas04_part1.csv"
+      - "1981_sas04_part2.csv"
+      - "1981_sas04_part3.csv"
+      - "1981_sas04_part4.csv"
+      - "1981_sas04_part5.csv"
+    
+  sas07:
+    description: "Employment & Economic Activity"
+    parts: 5
+    expected_columns: 28
+    expected_rows_manchester: 1017
+    output_file: "sas07_1981_ed_level.csv"
+    combined_file: "data/processed/aggregates/census_1981/1981_sas07_employment_combined.csv"
+    expected_raw_files:
+      - "1981_sas07_part1.csv"
+      - "1981_sas07_part2.csv"
+      - "1981_sas07_part3.csv"
+      - "1981_sas07_part4.csv"
+      - "1981_sas07_part5.csv"
+    
+  sas10:
+    description: "Housing & Tenure"
+    parts: 5
+    expected_columns: 221
+    expected_rows_manchester: 1017
+    output_file: "sas10_1981_ed_level.csv"
+    combined_file: "data/processed/aggregates/census_1981/1981_sas10_housing_combined.csv"
+    expected_raw_files:
+      - "1981_sas10_part1.csv"
+      - "1981_sas10_part2.csv"
+      - "1981_sas10_part3.csv"
+      - "1981_sas10_part4.csv"
+      - "1981_sas10_part5.csv"
+
+# Processing Steps
+# ================
+# 1. Load: Each table's 5 parts from data/raw/sas/
+# 2. Concatenate: Merge horizontally on 'zoneid' column
+# 3. Filter: Keep only zoneids starting with '03BN' (Manchester LAD)
+# 4. Validate: Sum of ED values should match combined aggregate file
+# 5. Output: Save to data/processed/raw_ed_level/1981/
+
+# Expected Raw File Structure
+# ============================
+# Each file should have:
+#   - Column 1: 'zoneid' (string, ED code)
+#   - Columns 2+: SAS variable codes (e.g., '81sas020001', '81sas020002', etc.)
+#   - Rows: One per enumeration district (nationally, ~112,000 total)
+#
+# Example first few rows of 1981_sas02_part1.csv:
+#   zoneid,81sas020001,81sas020002,81sas020003,...
+#   A0000000001,45,23,22,...
+#   A0000000002,78,39,39,...
+#   ...
+#   H1981F00017973,125,62,63,...  <- Manchester ED example
+#   ...
+
+# Usage
+# =====
+# Run the ingestion script:
+#   cd /path/to/FYP_Data_Pipeline-1
+#   python scripts/ingest_raw_sas_ed_level_1981.py
+#
+# The script will:
+#   1. Check for raw files in data/raw/sas/
+#   2. Load and concatenate each table's 5 parts
+#   3. Filter to Manchester (03BN) EDs
+#   4. Validate against combined aggregates
+#   5. Output ED-level CSVs to data/processed/raw_ed_level/1981/
+#
+# Output files will then be used by:
+#   python scripts/phase6_compute_indicators_1981.py
+
+# Notes
+# =====
+# - All 'zoneid' values should be standardized (uppercase, trimmed)
+# - Manchester filter: zoneid.startswith('03BN')
+# - Expected result: 1,017 Manchester EDs per table
+# - Column order doesn't matter but zoneid must be present in all parts
+# - Concatenation method: merge on zoneid, drop zoneid from subsequent parts
+#   to avoid duplication (assumes same ED order in all parts)
