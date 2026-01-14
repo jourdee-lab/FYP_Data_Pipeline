@@ -1,0 +1,344 @@
+# Phase 6 Indicator Configuration
+# ================================
+# Defines indicators for small-area analysis of Chinese immigrant integration
+# in Manchester (1981, 1991, 2001)
+#
+# Structure:
+#   Each indicator has:
+#   - table: SAS table (02, 04, 07, 10)
+#   - code: SAS variable code (e.g., 81sas100929)
+#   - description: Human-readable description
+#   - type: 'raw' (count), 'denominator' (for calculating rates), or 'rate' (derived)
+#   - denominator: (for rates) reference to denominator indicator
+#
+# Naming convention:
+#   - Raw counts: [DOMAIN]_[MEASURE] (e.g., TOTAL_RES, CHINESE_BORN)
+#   - Denominators: TOTAL_[DOMAIN] (e.g., TOTAL_RES, TOTAL_HH)
+#   - Percentages: PCT_[MEASURE] (e.g., PCT_CHINESE_BORN)
+#   - Rates: [MEASURE]_RATE (e.g., EMP_RATE)
+
+years:
+  1981:
+    # =====================================================
+    # SAS02: DEMOGRAPHIC BASE (Total Population by Age/Sex)
+    # =====================================================
+    TOTAL_RES:
+      table: sas02
+      code: 81sas020050
+      description: "All ages TOTAL Persons (Residents in households)"
+      type: denominator
+      note: "Universe: All persons; base denominator for population rates"
+    
+    PCT_MALE:
+      table: sas02
+      code: 81sas020051
+      description: "Males as % of total population"
+      type: rate
+      denominator: TOTAL_RES
+      calculation: "100 * 81sas020051 / TOTAL_RES"
+      note: "Optional: Sex structure indicator"
+    
+    PCT_FEMALE:
+      table: sas02
+      code: 81sas020054
+      description: "Females as % of total population"
+      type: rate
+      denominator: TOTAL_RES
+      calculation: "100 * 81sas020054 / TOTAL_RES"
+      note: "Optional: Sex structure indicator"
+
+    # =====================================================
+    # SAS04: COUNTRY OF BIRTH (Chinese / Far East Presence)
+    # =====================================================
+    CHINESE_BORN:
+      table: sas04
+      code: 81sas040359
+      description: "Total persons born in Far East"
+      type: raw
+      note: "Universe: All persons; includes China, Hong Kong, Taiwan, etc."
+    
+    CHINESE_BORN_MALE:
+      table: sas04
+      code: 81sas040360
+      description: "Males born in Far East"
+      type: raw
+    
+    CHINESE_BORN_FEMALE:
+      table: sas04
+      code: 81sas040361
+      description: "Females born in Far East"
+      type: raw
+    
+    PCT_CHINESE_BORN:
+      table: sas04
+      code: 81sas040359
+      description: "Far East-born as % of total population"
+      type: rate
+      denominator: TOTAL_RES
+      calculation: "100 * CHINESE_BORN / TOTAL_RES"
+      note: "Key integration indicator: ethnic presence"
+
+    # =====================================================
+    # SAS07: EMPLOYMENT (Economic Position - Ages 16+)
+    # =====================================================
+    ALL_EMPLOYED:
+      table: sas07
+      code: 81sas070615
+      description: "All persons in employment (ages 16+)"
+      type: raw
+      note: "Includes all employed persons (full-time + part-time)"
+    
+    EMP_RATE:
+      table: sas07
+      code: 81sas070615
+      description: "Employment rate (ages 16+)"
+      type: rate
+      denominator: null
+      calculation: "100 * ALL_EMPLOYED / (population aged 16+)"
+      note: "Note: 1981 SAS07 does not include unemployment, only employment status"
+      note: "Registered unemployed"
+    
+    EMP_RATE:
+      table: sas07
+      code: 81sas070615
+      description: "Employment rate: employed as % of all persons"
+      type: rate
+      calculation: "100 * ALL_EMPLOYED / TOTAL_RES"
+      note: "1981 SAS07 contains detailed employment categories (full-time, part-time, self-employed, etc) but no unemployment count"
+
+    # NOTE: UNEMP_RATE not available in 1981 SAS07 (no unemployment data in this table)
+
+    # =====================================================
+    # SAS10: HOUSING & TENURE (Housing Quality, Tenure, Amenities)
+    # =====================================================
+    TOTAL_HH:
+      table: sas10
+      code: 81sas100929
+      description: "Households with residents (TOTAL tenure)"
+      type: denominator
+      note: "Universe: Households; base for housing indicators"
+    
+    # === TENURE ===
+    OWNER_OCC_HH:
+      table: sas10
+      code: 81sas100967
+      description: "Owner-occupied households"
+      type: raw
+      note: "Tenure indicator; candidate codes: 81sas100967 or 81sas100968 (TBD)"
+    
+    PCT_OWNER_OCC:
+      table: sas10
+      code: 81sas100967
+      description: "Owner-occupied households as % of total"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * OWNER_OCC_HH / TOTAL_HH"
+    
+    SOCIAL_RENT_HH:
+      table: sas10
+      code: 81sas100989  # Council + housing association combined
+      description: "Social renting households (council + HA)"
+      type: raw
+      note: "Universe: Households; combines council (81sas100989) + housing association"
+    
+    PCT_SOCIAL_RENT:
+      table: sas10
+      code: 81sas100989
+      description: "Social renting households as % of total"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * SOCIAL_RENT_HH / TOTAL_HH"
+    
+    # === CAR OWNERSHIP ===
+    NO_CAR_HH:
+      table: sas10
+      code: 81sas100949
+      description: "Households with no car"
+      type: raw
+      note: "Car deprivation indicator"
+    
+    PCT_NO_CAR:
+      table: sas10
+      code: 81sas100949
+      description: "No-car households as % of total"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * NO_CAR_HH / TOTAL_HH"
+    
+    CAR_OWNERSHIP_INDEX:
+      table: sas10
+      code: 81sas100949
+      description: "Car ownership index (inverse of no-car rate)"
+      type: rate
+      calculation: "100 - PCT_NO_CAR"
+      note: "Composite index: 0=no cars, 100=universal car ownership"
+    
+    # === OVERCROWDING ===
+    OVERCROWD_GT1P5:
+      table: sas10
+      code: 81sas100945
+      description: "Households with >1.5 persons per room"
+      type: raw
+      note: "Housing quality indicator: severe overcrowding"
+    
+    PCT_OVERCROWD_GT1P5:
+      table: sas10
+      code: 81sas100945
+      description: "Severely overcrowded households (>1.5 pp/room) as %"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * OVERCROWD_GT1P5 / TOTAL_HH"
+    
+    OVERCROWD_1TO1P5:
+      table: sas10
+      code: 81sas100946
+      description: "Households with 1-1.5 persons per room"
+      type: raw
+      note: "Housing quality indicator: moderate overcrowding"
+    
+    PCT_OVERCROWD_1TO1P5:
+      table: sas10
+      code: 81sas100946
+      description: "Moderately overcrowded households (1-1.5 pp/room) as %"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * OVERCROWD_1TO1P5 / TOTAL_HH"
+    
+    # === AMENITIES DEPRIVATION ===
+    NO_BATH_OR_WC:
+      table: sas10
+      code: 81sas100932
+      description: "Households lacking bath or WC"
+      type: raw
+      note: "Housing deprivation indicator: basic amenities"
+    
+    PCT_NO_BATH_OR_WC:
+      table: sas10
+      code: 81sas100932
+      description: "Households lacking bath or WC as %"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * NO_BATH_OR_WC / TOTAL_HH"
+    
+    NO_INSIDE_BATH_OR_WC:
+      table: sas10
+      code: 81sas100933
+      description: "Households without inside bath or WC"
+      type: raw
+      note: "Housing deprivation indicator: inside amenities"
+    
+    PCT_NO_INSIDE_BATH_OR_WC:
+      table: sas10
+      code: 81sas100933
+      description: "Households without inside bath or WC as %"
+      type: rate
+      denominator: TOTAL_HH
+      calculation: "100 * NO_INSIDE_BATH_OR_WC / TOTAL_HH"
+    
+    # === COMPOSITE HOUSING QUALITY INDEX ===
+    HOUSING_QUALITY_INDEX:
+      table: sas10
+      code: null  # Composite; calculated from multiple fields
+      description: "Housing quality composite index (standardized)"
+      type: rate
+      calculation: "z-score composite of overcrowding + amenities deprivation"
+      note: "Optional: Combines PCT_OVERCROWD_GT1P5, PCT_NO_BATH_OR_WC (normalized to 0-1)"
+
+  1991:
+    # Placeholder structure for 1991 data
+    # Actual SAS codes to be populated after 1991 data ingestion
+    TOTAL_RES:
+      table: sas02
+      code: 91sas020001  # TBD
+      description: "All ages TOTAL Persons (Residents)"
+      type: denominator
+    
+    CHINESE_BORN:
+      table: sas04
+      code: 91sas040359  # TBD
+      description: "Total persons born in Far East"
+      type: raw
+    
+    PCT_CHINESE_BORN:
+      table: sas04
+      code: 91sas040359  # TBD
+      description: "Far East-born as % of total population"
+      type: rate
+      denominator: TOTAL_RES
+    
+    TOTAL_HH:
+      table: sas10
+      code: 91sas100929  # TBD
+      description: "Households with residents (TOTAL tenure)"
+      type: denominator
+    
+    PCT_NO_CAR:
+      table: sas10
+      code: 91sas100949  # TBD
+      description: "No-car households as % of total"
+      type: rate
+      denominator: TOTAL_HH
+
+  2001:
+    # Placeholder structure for 2001 data
+    # Actual SAS codes to be populated after 2001 data ingestion
+    TOTAL_RES:
+      table: sas02
+      code: 01sas020001  # TBD
+      description: "All ages TOTAL Persons (Residents)"
+      type: denominator
+    
+    CHINESE_BORN:
+      table: sas04
+      code: 01sas040359  # TBD
+      description: "Total persons born in Far East"
+      type: raw
+    
+    PCT_CHINESE_BORN:
+      table: sas04
+      code: 01sas040359  # TBD
+      description: "Far East-born as % of total population"
+      type: rate
+      denominator: TOTAL_RES
+    
+    TOTAL_HH:
+      table: sas10
+      code: 01sas100929  # TBD
+      description: "Households with residents (TOTAL tenure)"
+      type: denominator
+    
+    PCT_NO_CAR:
+      table: sas10
+      code: 01sas100949  # TBD
+      description: "No-car households as % of total"
+      type: rate
+      denominator: TOTAL_HH
+
+# =====================================================
+# METADATA & NOTES
+# =====================================================
+# 
+# Indicator Categories:
+# - Demographic base: Population size, age/sex structure
+# - Ethnic presence: Far East/Chinese-born prevalence
+# - Housing tenure: Owner-occupied, social renting
+# - Housing quality: Overcrowding, amenities deprivation
+# - Economic position: Employment, unemployment rates
+# - Composite indices: Combined deprivation/quality measures
+#
+# Data Quality Notes:
+# - (TBD) codes marked with TBD require verification via 1981_variable_lookup.csv
+# - SAS07 codes for employment need verification (exact table structure varies)
+# - 1991/2001 codes are placeholders pending data ingestion
+# - Missing data (zero counts) should be handled as null, not 0% rates
+#
+# Calculation Rules:
+# - Rates: numerator / denominator * 100
+# - Percentages must range 0-100 (check for negative or >100 anomalies)
+# - Suppress rates where denominator < 10 (small number suppression)
+# - Handle division by zero (null denominators → null rates)
+#
+# Usage:
+# - Load via: config = yaml.safe_load(open('configs/indicators.yml'))
+# - Access: config['years']['1981']['TOTAL_RES']['code']
+# - Iterate: for year, indicators in config['years'].items(): ...
